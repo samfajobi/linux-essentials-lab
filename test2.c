@@ -8,6 +8,19 @@ static int DetectWindowTestParse01 (void)
     DetectWindowFree(NULL, wd);
     PASS;
 }
+\test DetectWindowTestParse02 is a test for setting the window opt negated
+\test DetectWindowTestParse02 is a test for setting the window opt negated
+\test DetectWindowTestParse02 is a test for setting the window opt negated
+\test DetectWindowTestParse02 is a test for setting the window opt negated
+\test DetectWindowTestParse02 is a test for setting the window opt negated
+\test DetectWindowTestParse02 is a test for setting the window opt negated
+\test DetectWindowTestParse02 is a test for setting the window opt negated
+\test DetectWindowTestParse02 is a test for setting the window opt negated
+
+\test DetectWindowTestParse02 is a test for setting the window opt negated
+\test DetectWindowTestParse02 is a test for setting the window opt negated
+\test DetectWindowTestParse02 is a test for setting the window opt negated
+
 
 /**
  * \test DetectWindowTestParse02 is a test for setting the window opt negated
