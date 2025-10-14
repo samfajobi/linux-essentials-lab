@@ -49,3 +49,7 @@ static int DetectWindowTestParse04 (void)
     DetectWindowFree(NULL, wd);
     PASS;
 }
+
+
+\test DetectWindowTestParse03 is a test to check for a big value
+\test DetectWindowTestParse03 is a test to check for a big value
