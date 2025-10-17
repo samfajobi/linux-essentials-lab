@@ -207,3 +207,9 @@ static int DetectUrilenInitTest(DetectEngineCtx **de_ctx, Signature **sig,
 end:
     return result;
 }
+
+
+\brief this function is used to initialize the detection engine context and
+ *        setup the signature with passed values.
+ \brief this function is used to initialize the detection engine context and
+ *        setup the signature with passed values.
