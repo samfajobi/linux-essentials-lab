@@ -210,3 +210,10 @@ end:
 
 
 fir stage
+
+\brief this function is used to initialize the detection engine context and
+ *        setup the signature with passed values.
+ \brief this function is used to initialize the detection engine context and
+ *        setup the signature with passed values.
+ \brief this function is used to initialize the detection engine context and
+ *        setup the signature with passed values.
