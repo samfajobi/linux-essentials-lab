@@ -19,11 +19,3 @@ Here are some popular Linux distributions:
     Alpine Linux – A lightweight, security-focused distro often used in containers.
 
 
-### Useful References:
-
-- Linux Kernel Source code:
-http://git.kernel.org/
-
-- Mirror of Linux Kernel on GitHub:
-http://github.com/torvalds/linux
-
