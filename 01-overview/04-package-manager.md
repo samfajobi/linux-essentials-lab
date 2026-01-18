@@ -56,3 +56,55 @@ Then, to install the latest versions of packages, run:
 ```bash
 sudo apt upgrade -y
 ```
+
+## 🛠 Essential Package Manager Commands
+### **APT (Debian, Ubuntu)**
+```bash
+sudo apt update         # Update package lists
+sudo apt upgrade -y     # Upgrade installed packages
+sudo apt install nginx  # Install a package
+sudo apt remove nginx   # Remove a package
+sudo apt autoremove     # Remove unused dependencies
+sudo apt search nginx   # Search for a package
+```
+
+### **DNF (Fedora, RHEL, CentOS)**
+```bash
+sudo dnf check-update   # Check for updates
+sudo dnf update         # Update all packages
+sudo dnf install nginx  # Install a package
+sudo dnf remove nginx   # Remove a package
+```
+
+### **Pacman (Arch Linux)**
+```bash
+sudo pacman -Syu        # Sync and update all packages
+sudo pacman -S nginx    # Install a package
+sudo pacman -R nginx    # Remove a package
+```
+
+### **Zypper (OpenSUSE)**
+```bash
+sudo zypper refresh     # Refresh package list
+sudo zypper update      # Update all packages
+sudo zypper install nginx  # Install a package
+sudo zypper remove nginx   # Remove a package
+```
+
+## 🚀 Best Practices for Using Package Managers
+- ✅ **Always update your package list before installing software:**
+  ```bash
+  sudo apt update && sudo apt upgrade -y
+  ```
+- ✅ **Use `autoremove` to clean up unused dependencies:**
+  ```bash
+  sudo apt autoremove
+  ```
+- ✅ **Enable automatic security updates (Ubuntu):**
+  ```bash
+  sudo apt install unattended-upgrades
+  sudo dpkg-reconfigure unattended-upgrades
+  ```
+
+---
+This document provides a solid foundation for understanding package managers in Linux! 🚀
