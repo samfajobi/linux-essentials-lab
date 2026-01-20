@@ -53,3 +53,39 @@ passwd username
   ```bash
   passwd -u username
   ```
+
+## Modifying Users
+Modify an existing user with `usermod`:
+- Change the username:
+  ```bash
+  usermod -l new_username old_username
+  ```
+- Change the home directory:
+  ```bash
+  usermod -d /new/home/directory -m username
+  ```
+- Change the default shell:
+  ```bash
+  usermod -s /bin/zsh username
+  ```
+
+## Deleting Users
+To remove a user but keep their home directory:
+```bash
+userdel username
+```
+To remove a user and their home directory:
+```bash
+userdel -r username
+```
+
+## Working with Groups
+### Creating Groups
+```bash
+groupadd groupname
+```
+
+### Adding Users to Groups
+```bash
+usermod -aG groupname username
+```
