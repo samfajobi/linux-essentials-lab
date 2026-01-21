@@ -78,3 +78,24 @@ Directories: Files created inside inherit the group.
 chmod g+s filename  # Set on file
 chmod g+s directory/  # Set on directory
 ```
+
+### Sticky Bit (`t` on others execute bit)
+Used on directories to allow only the owner to delete their files.
+```bash
+chmod +t directory/
+```
+Example: `/tmp` directory.
+
+## Default Permissions: `umask`
+`umask` defines default permissions for new files and directories.
+Check current umask:
+```bash
+umask
+```
+Set a new umask:
+```bash
+umask 022  # Default: 755 for directories, 644 for files
+```
+
+## Conclusion
+Understanding file permissions is essential for system security and proper file management. Using `chmod`, `chown`, and `chgrp`, you can control access to files and directories efficiently.
