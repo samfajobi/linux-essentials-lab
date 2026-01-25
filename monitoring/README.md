@@ -84,3 +84,23 @@ ip a  # Show IP addresses and interfaces
 netstat -tulnp  # Show listening ports
 ss -tulnp  # Alternative to netstat
 ```
+### Testing Connectivity
+```bash
+ping google.com  # Test internet connection
+traceroute google.com  # Trace the path to Google
+```
+### Checking DNS Resolution
+```bash
+nslookup example.com
+```
+
+## Log Monitoring
+### Live Monitoring of System Logs
+```bash
+tail -f /var/log/syslog  # Follow logs in real-time
+journalctl -f  # Systemd logs
+```
+### Checking Kernel Logs
+```bash
+dmesg | tail
+```
