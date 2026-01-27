@@ -29,3 +29,25 @@ Managing disks and storage efficiently is crucial for system performance and sta
 - `lvcreate -L 10G -n lv_name vg_name` – Create a logical volume
 - `mkfs.ext4 /dev/vg_name/lv_name` – Format an LVM partition
 - `mount /dev/vg_name/lv_name /mnt` – Mount an LVM partition
+
+### Swap Management
+- `mkswap /dev/sdX` – Create a swap partition
+- `swapon /dev/sdX` – Enable swap space
+- `swapoff /dev/sdX` – Disable swap space
+
+## Viewing Disk Information
+### Using `lsblk`
+List all block devices:
+```bash
+lsblk
+```
+### Using `fdisk`
+View partition details:
+```bash
+fdisk -l
+```
+### Using `df`
+Check available disk space:
+```bash
+df -h
+```
