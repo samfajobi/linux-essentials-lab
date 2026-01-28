@@ -80,7 +80,7 @@ mkfs.xfs /dev/sdX1
 mount /dev/sdX1 /mnt
 ```
 ### Unmount a Partition
-```bash
+```bash 
 umount /mnt
 ```
 ### Remount a Partition
@@ -88,3 +88,16 @@ umount /mnt
 mount -o remount,rw /mnt
 ```
 
+## LVM Management
+### Create a Physical Volume
+```bash
+pvcreate /dev/sdX
+```
+### Create a Volume Group
+```bash
+vgcreate vg_name /dev/sdX
+```
+### Create a Logical Volume
+```bash
+lvcreate -L 10G -n lv_name vg_name
+```
