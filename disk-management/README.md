@@ -178,3 +178,11 @@ sudo mkfs.ext4 /dev/sdb1
 sudo mkdir /data
 sudo mount /dev/sdb1 /data
 ```
+### Quick Reference
+
+| Use Case                     | Command(s)                  |
+|-------------------------------|-----------------------------|
+| View disks and partitions     | `lsblk`                     |
+| Partition a new disk          | `fdisk`                     |
+| Mount an existing partition   | `mount`                     |
+| Full setup (new disk)         | `fdisk + mkfs + mount`      |
