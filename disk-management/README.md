@@ -101,3 +101,22 @@ vgcreate vg_name /dev/sdX
 ```bash
 lvcreate -L 10G -n lv_name vg_name
 ```
+### Format and Mount the Logical Volume
+```bash
+mkfs.ext4 /dev/vg_name/lv_name
+mount /dev/vg_name/lv_name /mnt
+```
+
+## Swap Management
+### Create a Swap Partition
+```bash
+mkswap /dev/sdX
+```
+### Enable Swap
+```bash
+swapon /dev/sdX
+```
+### Disable Swap
+```bash
+swapoff /dev/sdX
+```
